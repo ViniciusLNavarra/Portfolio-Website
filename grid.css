@@ -1,0 +1,38 @@
+/* GRID Container*/
+body {
+	display: grid;
+	grid-template-areas:
+		"icon      icon      icon        icon        icon        icon"
+		"space1    work      personal    projects    contacts    space2"
+		"footer    footer    footer      footer      footer      footer";
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-template-columns: 4vw 22vw 22vw 22vw 22vw 4vw
+	align-items: center;
+	justify-items: center;
+}
+/* GRID Items*/
+.icon {
+	grid-area: icon;
+}
+.space1 {
+	grid-area: space1;
+}
+.space2 {
+	grid-area: space2;
+}
+.work {
+	grid-area: work;
+}
+.personal {
+	grid-area: personal;
+}
+.projects {
+	grid-area: projects;
+}
+#contacts {
+	grid-area: contacts;
+}
+footer {
+	grid-area: footer;
+}
+ 

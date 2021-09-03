@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-areas:
+		"icon      icon        icon        icon"
+		"work      personal    projects    contacts"
+		"footer    footer      footer      footer";
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+#contactsicon{
+    top: 50%;
+    left: 50%; 
+}
+#contactsicon img{
+    width: 50%;
+}
+.logo {
+    grid-area: icon;
+}
+.work {
+    grid-area: work;
+}
+.personal {
+    grid-area: personal;
+}
+.projects {
+    grid-area: projects;
+}
+.contacts {
+    grid-area: contacts;
+}
+footer {
+    grid-area: footer;
+}

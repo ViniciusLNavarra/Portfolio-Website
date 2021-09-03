@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+	<head>
+		<link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+		<link rel='stylesheet' href='grid.css'/>
+		<link rel='stylesheet' href='css/main.css'/>
+		<meta charset="UTF-8"/>
+		<meta name='author' content='Vinicius Leonardo Navarra'/>
+		<meta name='copyright' content='Vinicius Leonardo Navarra'/>
+		<meta name='description' content='Portfolio for employers to view'/>
+		<meta name='project' content='Portfolio'/>
+		<title>Portfolio - Main</title>
+		<!--Add Favicon, HTML5 Validation, CSS, JS-->
+		<style>
+			.flipcard {
+				background-color: transparent;
+				height: 100%;
+				perspective: 1000px;
+			}
+			.inner-card {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				transition: transform 0.6s;
+				transform-style: preserve-3d;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			}
+			.flipcard:hover .inner-card {
+				transform: rotateY(180deg);
+			}
+			.front-card, .back-card {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				-webkit-backface-visibility; hidden;
+				backface-visibility: hidden;
+			}
+			.front-card {
+				/*background-color: #bbbbbb00;*/
+				/*color: black;*/
+			}
+			.back-card {
+				/*
+				background-color: 2980b9;
+				color: white;*/
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<img class='icon' src='img/logo.png' alt='Logo'/>
+		<div class='space1'></div>
+		<!--Work & school experience-->
+		<a class="work" href='pages/experience.html'>
+			<div>
+				<!--Work & School Icon-->
+				<img/>
+				<h3>Work & School</h3>
+			</div>
+		</a>
+		<!--Personal Information-->
+		<a class="personal" href='pages/personal.html'>
+			<div>
+				<!--Personal Info-->
+				<img/>
+				<h3>Personal Info</h3>
+			</div>
+		</a>
+		<!--References & projects-->
+		<a class="projects" href='pages/refprojects.html'>
+			<div>
+				<!--References Icon-->
+				<img/>
+				<h3>References</h3>
+			</div>
+		</a>
+		<!--Flipcard for contact information-->
+		<div id="contacts" class='flipcard'>
+			<div class='inner-card'>
+				<div class='front-card'>
+					<!--Contact Icon-->
+					<img class='pageicon' src='img/contacts.png' alt='Contacts icon'/>
+					<h3>Contact Info</h3>
+				</div>
+				<div class='back-card'>
+					<img class='logo' src='img/logo.png' alt='Logo'/>
+					<h1>Contacts</h1>
+					<ul>
+						<li>
+							<a href='mailto:viniciuslnavarra@outlook.com'>E-Mail</a>
+						</li>
+						<li>
+							<a href='https://www.github.com/ViniciusLNavarra' target='_blank'>GitHub Account</a>
+						</li>
+						<li>
+							<a href='https://www.linkedin.com/in/vinicíus-leonárdo-navarra' target='_blank'>LinkedIn Account</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='space2'></div>
+		<footer>
+			<p>© Vinicius Navarra - 2021</p>
+		</footer>
+	</body>
+</html>
