@@ -22,9 +22,9 @@
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-items: center;
+    	display: flex;
+    	align-items: center;
+    	justify-items: center;
 }
 /*#front-card {
 	background-color: #bbbbbb00;

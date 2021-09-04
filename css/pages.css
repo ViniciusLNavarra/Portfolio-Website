@@ -9,3 +9,7 @@ body {
 	align-items: center;
 	justify-items: center;
 }
+#wrapper {
+	background-color: rgba(234, 224, 200, 0.16);
+	border: 1px solid #eae0c8;
+}

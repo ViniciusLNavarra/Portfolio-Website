@@ -1,13 +1,25 @@
-body {
-    display: grid;
-    grid-template-areas:
-		"icon      icon        icon        icon"
-		"work      personal    projects    contacts"
-		"footer    footer      footer      footer";
-	grid-template-rows: 10vh 80vh 10vh;
-	grid-template-columns: repeat(4, 1fr);
-	align-items: center;
-	justify-items: center;
+@media screen and (min-width: 1300px){
+	#wrapper {
+		display: grid;
+		grid-template-areas:
+			"work      personal    projects    contacts";
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
+}
+@media screen and (max-width: 1300px){
+	#wrapper {
+		display: grid;
+		grid-template-areas:
+			"work      personal"
+			"projects    contacts";
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
 }
 #contactsicon{
     top: 50%;
@@ -16,21 +28,31 @@ body {
 #contactsicon img{
     width: 50%;
 }
-.logo {
-    grid-area: icon;
-}
 .work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     grid-area: work;
 }
 .personal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     grid-area: personal;
 }
 .projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     grid-area: projects;
 }
 .contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     grid-area: contacts;
-}
-footer {
-    grid-area: footer;
 }
