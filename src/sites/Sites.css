@@ -1,0 +1,15 @@
+body {
+    display: grid;
+    grid-template-areas:
+		"icon"
+		"wrapper"
+		"footer";
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+}
+#wrapper {
+	background-color: rgba(234, 224, 200, 0.16);
+	border: 1px solid #eae0c8;
+}
