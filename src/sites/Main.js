@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import './Main.css'
-import './Flipcard.css'
+import '../css/Main.css'
+import '../css/Flipcard.css'
+import logo from "../img/logo.png";
+import contactIcon from "../img/contacts.png"
 
 function Main() {
   return (
@@ -52,13 +54,13 @@ function ContactsCard() {
       <div id='inner-card'>
         <div id='front-card'>
           <div id='contactsicon'>
-            <img src='img/contacts.png' alt='Contacts icon'/>
+            <img src={contactIcon} alt='Contacts icon'/>
             <h3>Contact Info</h3>
           </div>
         </div>
         <div id='back-card'>
           <div>
-            <img class='logo'src='img/logo.png' alt='Logo'/>
+            <img id='logo'src={logo} alt='Logo'/>
             <h1>Contacts</h1>
             <ul>
               <li>

@@ -9,7 +9,14 @@ body {
 	align-items: center;
 	justify-items: center;
 }
-#wrapper {
+#sitewrapper {
 	background-color: rgba(234, 224, 200, 0.16);
 	border: 1px solid #eae0c8;
+	grid-area: wrapper;
+	margin: 0 auto;
+	width: 85vw;
+	height: 75vh;
+}
+h2 {
+	margin-left: 0.83em;
 }

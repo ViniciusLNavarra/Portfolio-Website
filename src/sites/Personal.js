@@ -1,9 +1,8 @@
-import './Main.css'
-import './Sites.css'
+import '../css/Sites.css'
 
 function Personal() {
     return(
-        <div id="wrapper">
+        <div id="sitewrapper">
             <h2>Personal</h2>
         </div>
     )

@@ -1,9 +1,8 @@
-import './Main.css'
-import './Sites.css'
+import '../css/Sites.css'
 
 function Projects() {
     return(
-        <div id="wrapper">
+        <div id="sitewrapper">
             <h2>Projects</h2>
         </div>
     )

@@ -1,15 +1,14 @@
 import { Route, Switch } from "react-router";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Experience, Main, Personal, Projects } from "./sites/Sites";
-import "./App.css";
+import "./css/App.css";
 import logo from "./img/logo.png";
 
 function App() {
   return (
-    <div className="App">
-      <a href="/">
-        <img className="logo" src={logo} alt="Logo" />
-      </a>
+    <>
+      <div id="logo" href="/">
+        <a href="/"><img id="logo" src={logo} alt="Logo" /></a>
+      </div>
       <Switch>
         <Route exact path="/">
           <Main />
@@ -24,11 +23,10 @@ function App() {
           <Projects />
         </Route>
       </Switch>
-
       <footer>
         <p>&copy; Vinicius Navarra 2021 - {new Date().getFullYear()}</p>
       </footer>
-    </div>
+    </>
   );
 }
 

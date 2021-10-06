@@ -3,7 +3,7 @@
 		display: grid;
 		grid-template-areas:
 			"work      personal    projects    contacts";
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 		gap: 1rem;
 		align-items: center;
 		justify-items: center;
