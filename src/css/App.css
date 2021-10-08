@@ -21,9 +21,10 @@ body {
 	justify-items: center;
 }
 footer {
-	position: sticky;
+	position: fixed;
+	height: 5vh;
 	width: 100vw;
-	top: 100%;
+	top: 95vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	grid-area: footer;
 	text-align: center;
